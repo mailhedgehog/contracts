@@ -7,7 +7,7 @@ import (
 // Room name. Each room contains set of emails. By room application diverge what emails should be displayed for login
 // user. Now application expects have room name same as logged username (in case auth disabled - will be used name
 // "default").
-type Room = string
+type Room string
 
 // SearchQuery represents key->value map what describe search params.
 type SearchQuery = map[string]string
